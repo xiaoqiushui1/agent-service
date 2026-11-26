@@ -1,5 +1,9 @@
+from uuid import UUID
+
 from sqlalchemy.ext.asyncio import AsyncSession
 from decimal import Decimal
+
+from app.modules.chat_thread.exceptions import ChatThreadNotFoundError
 from app.modules.product.models import Product
 from app.modules.product.respository import ProductRepository
 

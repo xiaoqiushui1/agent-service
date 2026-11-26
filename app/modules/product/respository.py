@@ -1,6 +1,8 @@
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 from decimal import Decimal
+
+from app.modules.chat_thread.models import ChatThread
 from app.modules.product.models import Product
 class ProductRepository:
     def __init__(self, session: AsyncSession):
