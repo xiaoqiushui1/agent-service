@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends,Query
+from fastapi import APIRouter, Depends, Query
 from sqlalchemy.ext.asyncio import AsyncSession
 from app.infra.database import get_session
 from app.modules.product.schemas import ProductResponse
